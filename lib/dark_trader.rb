@@ -19,7 +19,7 @@ def fetch_prices(page,xpath2)
   prices = []
   page.xpath(xpath2).each do |price| 
     puts price.text
-    prices << price.text[1..-1].to_f
+    prices << price.text.delete(",$").to_f
   end
   return prices
 end
