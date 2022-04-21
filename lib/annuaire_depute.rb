@@ -58,27 +58,3 @@ def deputy_stalker (all_deputies_url)
 end
 
 puts deputy_stalker('https://www2.assemblee-nationale.fr/deputes/liste/alphabetique')
-
-
-
-
-
-
-
-
-all_deputies_url = 'https://www2.assemblee-nationale.fr/deputes/liste/alphabetique'
-#xpath_email = '/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[4]/ul/li[2]/a'
-xpath_email = '/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[3]/ul/li[2]/a'
-xpath_deputies_url = "///div[@id='deputes-list']//a/@href"
-xpath_deputies_name = "//div[@id='deputes-list']//a"
-#puts get_deputy_email(get_deputy_urls(all_deputies_url,xpath_deputies_url)[14],xpath_email)
-#puts get_deputy_urls(all_deputies_url,xpath_deputies_url)
-#puts get_deputy_names(all_deputies_url,xpath_deputies_name)
-
-### WORKS
-#/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[4]/ul/li[2]/a
-#/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[4]/ul/li[2]/a
-
-## DOES NOT WORK
-#/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[3]/ul/li[2]/a
-#/html/body/div/div[2]/div/div/div/section[1]/div/article/div[3]/div/dl/dd[3]/ul/li[2]/a
