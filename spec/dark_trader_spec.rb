@@ -8,7 +8,7 @@ describe "prgm returns at least 5 elements" do
 end
 
 describe "prgm containes at least BTC and ETH" do
-  it "the size of the output list should be bigger than 5" do
+  it "check if the restul has ETH and BTC" do
   # page = scrap('https://coinmarketcap.com/all/views/all/')
   has_BTC = false
   has_ETH = false
@@ -20,7 +20,7 @@ describe "prgm containes at least BTC and ETH" do
 end
 
 describe "fetch_currency should contain at least BTC and ETH" do
-  it "the size of the output list should be bigger than 5" do
+  it "check if the restul has ETH and BTC" do
   page = scrap('https://coinmarketcap.com/all/views/all/')
   xpath1 = "//tbody//a[@class='cmc-table__column-name--symbol cmc-link']"
   expect(fetch_currencies(page,xpath1).include?("BTC")).to  eq(true)

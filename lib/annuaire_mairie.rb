@@ -31,7 +31,6 @@ def get_townhall_names(departement_url,xpath_cities_name)
   return liste_city_names
 end
 
-
 def loading_bar(total_size, current_size)
   current_size = 100 * current_size / total_size
   puts ("#" * current_size.to_i).ljust(100,"-")
@@ -42,7 +41,6 @@ def mayor_stalker (departement_url)
   xpath_cities_url = "//a[@class='lientxt']/@href"
   xpath_cities_name = "//a[@class='lientxt']"
   liste_mayor_stalker = []
-
 
   puts "Start fetching cities urls"
   liste_urls = get_townhall_urls(departement_url,xpath_cities_url)

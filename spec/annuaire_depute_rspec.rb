@@ -25,7 +25,6 @@ describe "get_deputy_email should return list of mails" do
   it "if no address available shoud return No m@il address" do
     expect(get_deputy_email("https://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA720668",xpath_email,xpath_email_alt)).to  eq("No m@il address")
   end
-
 end
 
 describe "get_deputy_urls should return list of deputies' urls" do
@@ -44,12 +43,6 @@ describe "get_deputy_names should return list of deputies" do
     expect(get_deputy_names("https://www2.assemblee-nationale.fr/deputes/liste/alphabetique",xpath_deputies_name).size > 15).to eq(true)
   end
 end
-
-
-
-####################
-
-
 
 describe "deputy_stalker returns at least 5 elements" do
   it "the size of the output list should be bigger than 5" do

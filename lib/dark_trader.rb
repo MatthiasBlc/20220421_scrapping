@@ -1,28 +1,10 @@
-#require 'pry'
-#binding.pry
-#exit for leave
-
-# require 'dotenv'# Appelle la gem Dotenv
-
-# Dotenv.load('.env') # Ceci appelle le fichier .env (situé dans le même dossier que celui d'où tu exécute app.rb)
-# et grâce à la gem Dotenv, on importe toutes les données enregistrées dans un hash ENV
-# --------------------------------------------------------
-
 require 'nokogiri'
 require 'open-uri'
-# require 'rexml'
 
 def scrap(url)
   page = Nokogiri::HTML(URI.open(url))
   return page
 end
-
-# def news(cryptos)
-#   page.cryptos.each do |crypto|
-#     puts crypto.text #ou n'importe quelle autre opération de ton choix ;)
-#   end
-# end
-# # email_link['href'] pour le texte d'un link
 
 def fetch_currencies(page,xpath1)
   currencies=[]
@@ -41,7 +23,6 @@ def fetch_prices(page,xpath2)
   end
   return prices
 end
-
 
 def prgm()
   page = scrap('https://coinmarketcap.com/all/views/all/')
