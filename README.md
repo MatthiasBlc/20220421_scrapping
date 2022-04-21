@@ -1,6 +1,7 @@
 # 20220421_SCRAPPING
 
-Ce dossier est constitué de 2 programmes ayant chacun une fonction différente.
+Ce dossier est constitué de 3 programmes ayant chacun une fonction différente.
+Les fichiers présents dans lib a chacun un fichier spec associé ayant pour but de tester le programme. 
 
 ## 1/ liste des fichiers:
 
@@ -24,7 +25,6 @@ annuaire_mairie_spec.rb
 annuaire_depute_spec.rb
 
 
-Les fichiers présents dans lib a chacun un fichier spec associé ayant pour but de tester le programme. 
 
 ---
 
